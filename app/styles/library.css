@@ -1,0 +1,57 @@
+body.library
+  .chakra-tabs__tab-panels
+  > .chakra-tabs__tab-panel
+  > .chakra-stack {
+  flex-direction: row-reverse;
+  padding-top: var(--chakra-space-2);
+  padding-bottom: var(--chakra-space-2);
+}
+
+body.library .chakra-tabs__tab-panels > .chakra-tabs__tab-panel:first-child {
+  padding-top: var(--chakra-space-6);
+  flex-direction: column-reverse;
+}
+
+body.library
+  .chakra-tabs__tab-panels
+  > .chakra-tabs__tab-panel:nth-child(2)
+  > div {
+  padding-top: var(--chakra-space-6);
+  flex-direction: column-reverse;
+  display: flex;
+  flex-grow: 1;
+}
+body.library
+  .chakra-tabs__tab-panels
+  > .chakra-tabs__tab-panel:nth-child(2)
+  > div
+  > div:first-child {
+  margin-bottom: 0;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+body.library
+  .chakra-tabs__tab-panels
+  > .chakra-tabs__tab-panel:nth-child(2)
+  > div
+  > div:first-child
+  > div:nth-child(2) {
+  flex-grow: 0;
+}
+body.library
+  .chakra-tabs__tab-panels
+  > .chakra-tabs__tab-panel:nth-child(2)
+  > div
+  > div:first-child
+  > div:nth-child(2)
+  p {
+  width: max-content;
+}
+
+body.library
+  .chakra-tabs__tab-panels
+  > .chakra-tabs__tab-panel:nth-child(2)
+  > div
+  > div:nth-child(2) {
+  flex-grow: 1;
+}
